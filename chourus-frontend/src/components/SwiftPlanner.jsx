@@ -107,34 +107,36 @@ export default function SwiftPlanner() {
     <div className="panel planner">
       <h3>Planner</h3>
 
- <div className="planner-controls">
-  <label className="pc-field">
-    <span>City</span>
-    <select value={city} onChange={(e) => setCity(e.target.value)}>
-      <option value="">All</option>
-      {cities.map((ct) => (
-        <option key={ct} value={ct}>
-          {ct}
-        </option>
-      ))}
-    </select>
-  </label>
-
-  <label className="pc-field">
-    <span>Places / type</span>
-    <input
-      type="number"
-      min={1}
-      max={5}
-      value={count}
-      onChange={(e) => setCount(Number(e.target.value))}
-     />
+ <div className="planner-controls vertical">
+  <div className="planner-inputs">
+    <label className="pc-field">
+      <span>City</span>
+      <select value={city} onChange={(e) => setCity(e.target.value)}>
+        <option value="">All</option>
+        {cities.map((ct) => (
+          <option key={ct} value={ct}>
+            {ct}
+          </option>
+        ))}
+      </select>
     </label>
 
-    <button className="btn" onClick={generate}>
-        Generate
-        </button>
-    </div>
+    <label className="pc-field">
+      <span>Places / type</span>
+      <input
+        type="number"
+        min={1}
+        max={5}
+        value={count}
+        onChange={(e) => setCount(Number(e.target.value))}
+      />
+    </label>
+  </div>
+
+  <button className="btn generate-btn" onClick={generate}>
+    Generate
+  </button>
+</div>
 
       <ul className="planner-list">
         {concerts.map((c) => (
