@@ -127,3 +127,16 @@
   
   width:100px;
  }
+
+ .edit-profile-structure{
+  border-radius: 20px;
+ 
+ }
+
+ .template-button{
+  background-color: gray;
+ }
+
+ .artist-button{
+  background-color: gray;
+ }
