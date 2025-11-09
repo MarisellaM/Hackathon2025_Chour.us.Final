@@ -38,8 +38,8 @@
 /* Scrollable message area (matches your panels) */
 /* Scrollable message area (fixed height) */
 .chat-box{
-  flex: none;                 /* was: flex: 1;  → keeps the box from stretching */
-  height: 400px;              /* pick your size: 260–360px works well */
+  flex: none;                 
+  height: 400px;              
   padding: 12px;
   overflow-y: auto;           /* scroll when messages overflow */
   display: flex;
@@ -117,7 +117,7 @@
 }
 .chat-input-area input{
   flex: 1;        
-  min-width:0;       /* shorter horizontally per your layout */
+  min-width:0;      
   padding:10px;
   border:none;
   border-radius:10px;

@@ -5,13 +5,13 @@ export default function FakeChat() {
   const [messages, setMessages] = useState([
     {
       sender: "other",
-      name: "Alice",
+      name: "AliceInChainz",
       text: "Hey there!",
       avatar: "https://i.pravatar.cc/32?img=3",
     },
     {
       sender: "other",
-      name: "Some Guy",
+      name: "Kira878",
       text: "What hotel are y'all staying at?",
       avatar: "https://i.pravatar.cc/32?img=5",
     },
@@ -41,7 +41,7 @@ export default function FakeChat() {
           },
 
            { 
-            name: "Alice",
+            name: "AliceInChainz",
             text: "Thats cool",
             avatar: "https://i.pravatar.cc/32?img=3",}
 

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import ConcertCard from "../components/ConcertCard";
 import FakeChat from "../components/FakeChat";
-import ScheduleWidget from "../components/ScheduleWidget";
+import SwiftPlanner from "../components/SwiftPlanner";
 import FanProjects from "../components/FanProjects";
 
 export default function Home() {
@@ -38,10 +38,12 @@ export default function Home() {
         </div>
         </aside>
 
-        {/* Right: Schedule */}
-        <section className="col"><ScheduleWidget /></section>
+        {/* Right Column: SwiftPlanner replaces Schedule */}
+        <aside className="col schedule">
+          <SwiftPlanner />
+        </aside>
       </main>
-
+      
       {/* Full-width Fan Projects (below grid) */}
       <div className="container">
         <FanProjects />
