@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import ConcertCard from "../components/ConcertCard";
-import ChatBox from "../components/ChatBox";
+import FakeChat from "../components/FakeChat";
 import ScheduleWidget from "../components/ScheduleWidget";
 import FanProjects from "../components/FanProjects";
 
@@ -31,8 +31,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Middle: Chat */}
-        <section className="col"><ChatBox /></section>
+     {/* Middle Column: Group Chat (using team FakeChat) */}
+    <aside className="col chatbox"> 
+        <div className="panel">
+            <FakeChat />
+        </div>
+        </aside>
 
         {/* Right: Schedule */}
         <section className="col"><ScheduleWidget /></section>

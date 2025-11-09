@@ -1,0 +1,145 @@
+/* Use your global theme vars from App.css */
+:root { /* reference only */ }
+
+/* Fill the parent .panel; no extra borders/margins */
+.chat-container{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* remove component border/background because the parent .panel already has it */
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Header */
+.chat-header{
+  color: #fff;
+  font-weight: 700;
+  padding: 0 0 8px 0;
+  background: transparent;
+  border-radius: 0;
+  font-size: 1.1rem;
+  position: relative;
+}
+.online-dot{
+  display:inline-block;
+  width:10px;height:10px;border-radius:50%;
+  background:#4ADE80; /* green online */
+  margin-left:8px;
+  box-shadow:0 0 2px #4ADE80;
+  vertical-align:middle;
+}
+
+/* Scrollable message area (matches your panels) */
+/* Scrollable message area (fixed height) */
+.chat-box{
+  flex: none;                 /* was: flex: 1;  → keeps the box from stretching */
+  height: 400px;              /* pick your size: 260–360px works well */
+  padding: 12px;
+  overflow-y: auto;           /* scroll when messages overflow */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #141419;
+  border: 1px solid #2a2a36;
+  border-radius: 10px;
+}
+
+/* optional: subtle scrollbar */
+.chat-box::-webkit-scrollbar { width: 8px; }
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: rgba(142,45,226,.5);
+  border-radius: 4px;
+}
+
+/* Message rows */
+.message-row{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  width:100%;
+}
+.other-row{ justify-content:flex-start; }
+.user-row { justify-content:flex-end; }
+
+/* Avatar (support either class used in JSX) */
+.avatar, .msg-avatar{
+  width:28px;height:28px;border-radius:50%;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,.2);
+}
+
+/* Message bubble + name */
+.message-content{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  max-width:75%;
+}
+.message-name{
+  font-size:.8rem;
+  font-weight:600;
+  color: var(--muted);
+  margin-bottom:2px;
+}
+.message{
+  padding:10px 14px;
+  border-radius:16px;
+  line-height:1.35;
+  word-wrap:break-word;
+  font-size:14px;
+}
+.other-message{
+  align-self:flex-start;
+  background:#1f1f30;
+  color: var(--text);
+  border:1px solid #2a2a45;
+}
+.user-message{
+  align-self:flex-end;
+  background: linear-gradient(90deg, #8E2DE2, #4A00E0);
+  color:#fff;
+  box-shadow:0 0 10px rgba(142,45,226,.25);
+}
+
+/* Input row – compact and matches your buttons */
+.chat-input-area{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding-top:10px;
+  margin: 0;
+}
+.chat-input-area input{
+  flex: 1;        
+  min-width:0;       /* shorter horizontally per your layout */
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#101020;
+  color: var(--text);
+  outline:1px solid #2a2a45;
+  box-sizing: border-box;
+}
+.chat-input-area input:focus{
+  outline:2px solid #8E2DE2;
+}
+.chat-input-area button{
+  margin-left: 0 0 auto;                /* sits right next to input */
+  background: linear-gradient(90deg, #8E2DE2, #4A00E0);
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  padding:10px 14px;
+  cursor:pointer;
+  font-size:14px;
+  flex-shrink:0;
+}
+.chat-input-area button:hover{
+  filter: brightness(1.08);
+}

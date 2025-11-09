@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="nav-links">
         <a href="#">Home</a>
         <a href="#">Profile</a>
-        <a href="#">Account</a>
+        <a href="#">Settings</a>
       </div>
 
       {/* PFP (right corner) */}
