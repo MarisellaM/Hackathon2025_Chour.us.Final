@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import './App.css';
+import './text.css';
+import FakeChat from './FakeChat.jsx';
+import SwiftPlanner from './SwiftPlanner.jsx';
+import WeekndPlanner from './WeekndPlanner.jsx';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  <div background-color="black">
+     <div className="positionText">
+    <div className="createBox">
+      <h1>Concerts</h1>
+    </div>
+
+<div className="button-color">
+    <div className="createTaylorBox">
+    <h2 className="positionTaylorHub">Taylor Swift Hub</h2>
+  </div>
+</div>
+
+
+<div className="button-color2">
+    <div className="createWeekendBox">
+    <h2 className="positionWeekendHub"> The Weekend Hub </h2>
+  </div>  
+</div>
+
+<div className="positionText">
+  <h1 className="schedule-style">Schedule</h1>
+</div>
+
+  <div className="createBorderBox"> </div>
+
+    
+  <FakeChat />
+  <div className="createBorderBox2"></div>
+
+<div className="position-planner">
+    <WeekndPlanner />
+    <SwiftPlanner />
+</div>
+  
+  
+  </div>
+  </div>
+ 
+  
+  
+);
+
+
 }
 
-export default App
+export default App;
+
+

@@ -1,0 +1,129 @@
+.positionText{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.createBox{
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  width: 540x;
+  height: 150px;
+  
+}
+
+.positionTaylorHub{
+  position: absolute;
+  left: 20px;
+  margin-top: 50px;
+}
+
+.createTaylorBox{
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 130px;
+
+  margin-left: 0px;
+  width: 225px;
+  height: 150px;
+
+}
+
+.positionWeekendHub{
+  position: absolute;
+  left: 300px;
+  margin-top: 50px;
+}
+
+.createWeekendBox{
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 130px;
+  
+
+  width: 225px;
+  height: 150px;
+  margin-left: 0px;
+  margin-top: -155px;
+}
+
+.page-break-after{
+  page-break-after: always;
+}
+
+.createBorderBox{
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin-top: -448px;
+
+  width: 550px;
+  height: 500px;
+}
+
+.createBorderBox2{
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin-top: -600px;
+
+  width: 550px;
+  height: 550px;
+}
+
+.button-color{
+  background-color:  #FFBF00;
+  width: 230px;
+  margin-left: 10px;
+}
+
+.button-color2{
+  background-color:  #FFBF00;
+  width: 230px;
+  margin-left: 290px;
+}
+
+.center-login{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 350px;
+  margin-top: 270px;
+}
+
+.style-login{
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 20px;
+  color: black;
+  }
+
+.schedule-style{
+  margin-left: 770px;
+}
+
+.position-planner{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin-top: 80px;
+  margin-left: 540px;
+
+ }
+
+ .my_scroll_div{
+
+
+  overflow-y: auto;
+  max-height: 300x;
+ }
+
+ .generated-text{
+  
+  width:100px;
+ }
