@@ -7,13 +7,13 @@ export default function FakeChat() {
       sender: "other",
       name: "AliceInChainz",
       text: "Hey there!",
-      avatar: "https://i.pravatar.cc/32?img=3",
+      avatar: "https://scontent.fftw1-1.fna.fbcdn.net/v/t39.30808-6/484094169_122145762890389573_6425834917011496722_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=n-RI9-fyLeQQ7kNvwGYWAG_&_nc_oc=AdnIXknO9OAraaXHoEoC6BzUZvnEd8CubvpK-8trxg5zwGRyNk-koMYJLAo3CEa6w0w&_nc_zt=23&_nc_ht=scontent.fftw1-1.fna&_nc_gid=VMJfenOhhzui5meEPmBqtA&oh=00_AfjwYxKJuuoiBUhffvR7mUe32ldcXjStBzZgfdPFoKVHqA&oe=6916A992",
     },
     {
       sender: "other",
       name: "Kira878",
       text: "What hotel are y'all staying at?",
-      avatar: "https://i.pravatar.cc/32?img=5",
+      avatar: "https://wallpapers-clan.com/wp-content/uploads/2022/11/cute-frog-pfp-16.jpg",
     },
   ]);
 
@@ -27,23 +27,23 @@ export default function FakeChat() {
           {
             text: "I'll look into that one!",
             name: "Swifty2007",
-            avatar: "https://i.pravatar.cc/32?img=4",
+            avatar: "https://assets.teenvogue.com/photos/641b2a23912ddccbabf80f80/16:9/w_1920,c_limit/GettyImages-1474459622.jpg",
           },
           {
             text: "Where is that?",
             name: "Swifty2007",
-            avatar: "https://i.pravatar.cc/32?img=6",
+            avatar: "https://assets.teenvogue.com/photos/641b2a23912ddccbabf80f80/16:9/w_1920,c_limit/GettyImages-1474459622.jpg",
           },
           {
             text: "Oh that one",
             name: "Swifty2007",
-            avatar: "https://i.pravatar.cc/32?img=6",
+            avatar: "https://assets.teenvogue.com/photos/641b2a23912ddccbabf80f80/16:9/w_1920,c_limit/GettyImages-1474459622.jpg",
           },
 
            { 
             name: "AliceInChainz",
             text: "Thats cool",
-            avatar: "https://i.pravatar.cc/32?img=3",}
+            avatar: "https://scontent.fftw1-1.fna.fbcdn.net/v/t39.30808-6/484094169_122145762890389573_6425834917011496722_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=n-RI9-fyLeQQ7kNvwGYWAG_&_nc_oc=AdnIXknO9OAraaXHoEoC6BzUZvnEd8CubvpK-8trxg5zwGRyNk-koMYJLAo3CEa6w0w&_nc_zt=23&_nc_ht=scontent.fftw1-1.fna&_nc_gid=VMJfenOhhzui5meEPmBqtA&oh=00_AfjwYxKJuuoiBUhffvR7mUe32ldcXjStBzZgfdPFoKVHqA&oe=6916A992",}
 
         ];
         const reply = fakeReplies[Math.floor(Math.random() * fakeReplies.length)];

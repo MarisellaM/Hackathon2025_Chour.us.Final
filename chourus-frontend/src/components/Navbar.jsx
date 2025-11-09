@@ -12,7 +12,7 @@ export default function Navbar() {
       {/* PFP (right corner) */}
       <img
         className="avatar"
-        src="https://i.pravatar.cc/64?img=5"
+        src="https://tr.rbxcdn.com/180DAY-2829d4a03681097f9974337eaef14cd6/420/420/FaceAccessory/Webp/noFilter"
         alt="Profile"
       />
     </nav>
